@@ -37,7 +37,7 @@ You can write tests in TypeScript and they will be run by mocha, with chai.
 
 - [ ] Support of test watch.
 
-## Demo
+## Demo app
 
 There are also boilerplates for a sample demo application. In order to build it use:
 
@@ -61,6 +61,10 @@ In order to see your app:
 ```
 $ cd demo && http-server .
 ```
+
+# Demo
+
+A project which uses this seed is [`ngresizable`](https://github.com/mgechev/ngresizable).
 
 # License
 
