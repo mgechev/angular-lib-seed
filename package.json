@@ -1,0 +1,55 @@
+{
+  "name": "LIB PACKAGE NAME",
+  "version": "0.0.0",
+  "description": "DESCRIPTION",
+  "main": "LIB NAME.bundle.js",
+  "jsnext:main": "MODULE NAME.module.js",
+  "types": "MODULE NAME.module.d.ts",
+  "scripts": {
+    "test": "mocha --require ts-node/register test/**/*.spec.ts --recursive",
+    "test:watch": "mocha -w --require ts-node/register test/**/*.spec.ts --recursive",
+    "build": "rimraf dist tsc && tsc -p tsconfig-esm.json && cp package.json dist && ts-node tools/cleanup.ts && ngc && cp README.md dist",
+    "build.demo": "rimraf demo/dist && tsc -p tsconfig-demo.json",
+    "lint": "tslint -c tslint.json lib/**/*.ts test/**/*.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "YOUR REPO"
+  },
+  "keywords": [
+    "resize",
+    "angular"
+  ],
+  "author": "YOUR NAME",
+  "license": "MIT",
+  "bugs": {
+    "url": "YOUR REPO/issues"
+  },
+  "homepage": "YOUR REPO#readme",
+  "peerDependencies": {
+    "@angular/core": ">=2.0.0"
+  },
+  "devDependencies": {
+    "@angular/common": "^2.4.2",
+    "@angular/compiler": "^2.4.2",
+    "@angular/compiler-cli": "^2.4.2",
+    "@angular/core": "^2.4.2",
+    "@angular/platform-browser": "^2.4.2",
+    "@angular/platform-browser-dynamic": "^2.4.2",
+    "@types/chai": "^3.4.34",
+    "@types/mocha": "^2.2.37",
+    "@types/node": "^7.0.0",
+    "chai": "^3.5.0",
+    "codelyzer": "^2.0.0-beta.4",
+    "core-js": "^2.4.1",
+    "mocha": "^3.2.0",
+    "rimraf": "^2.5.4",
+    "rxjs": "^5.0.3",
+    "systemjs": "0.19.28",
+    "ts-node": "^2.0.0",
+    "tslib": "^1.5.0",
+    "tslint": "^4.3.1",
+    "typescript": "^2.1.4",
+    "zone.js": "^0.7.4"
+  }
+}
