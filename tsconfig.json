@@ -10,9 +10,7 @@
     "outDir": "./dist",
     "lib": ["es2015", "dom"]
   },
-  "files": [
-    "./lib/ngresizable.module.ts"
-  ],
+  "files": [],
   "angularCompilerOptions": {
     "skipTemplateCodegen": true
   }
